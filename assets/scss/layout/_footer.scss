@@ -1,0 +1,95 @@
+footer {
+  background: $color-main;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  color: #ffffff;
+  .footer-menu {
+    justify-content: space-between;
+    align-items: center;
+    @include pad {
+      display: none;
+    }
+    .footer-text {
+      a {
+        color: #ffffff;
+        &:hover {
+          color: #ffffffb2;
+        }
+      }
+    }
+  }
+  .footer-contact {
+    .tel-box {
+      @include pad {
+        display: flex;
+        justify-content: space-between;
+      }
+      .tel {
+        align-items: center;
+        span {
+          font-size: $font-l;
+          @include pad {
+            font-size: 20px;
+          }
+        }
+        p {
+          font-size: $font-l;
+          @include pad {
+            font-size: 16px;
+          }
+        }
+      }
+      .tel-img {
+        display: none;
+        @include pad {
+          display: flex;
+        }
+        img {
+          width: 24px;
+          height: 24px;
+          @include pad {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+    .email {
+      align-items: center;
+      span {
+        font-size: 40px;
+        @include pad {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-size: $font-l;
+        @include pad {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .copyright {
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ffffff;
+    padding-top: 32px;
+    @include pad {
+      flex-direction: column;
+      align-items: start;
+    }
+    p {
+      @include pad {
+        margin-bottom: 8px;
+      }
+    }
+    .end-list {
+      @include pad {
+        flex-direction: column;
+      }
+      .footer-text {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

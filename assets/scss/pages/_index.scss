@@ -1,0 +1,280 @@
+.banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+  background-size: cover;
+  background-position: center center;
+  height: 787px;
+  @include pad {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+  }
+  .banner-content {
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    .banner-text {
+      flex-direction: column;
+      align-items: flex-end;
+      color: $color-secondary;
+      h3 {
+        font-size: $font-l;
+      }
+      h2 {
+        font-size: $font-3xl;
+        font-weight: bold;
+      }
+      a {
+        width: 104px;
+        height: 40px;
+        background: $color-main;
+        color: #ffffff;
+        font-size: $font-s;
+        text-align: center;
+        padding-top: 4px;
+        &:hover {
+          color: #ffffffb2;
+        }
+      }
+    }
+  }
+}
+.service {
+  background: #fbf2f2;
+  padding: 80px 0;
+  text-align: center;
+  color: $color-secondary;
+  h2 {
+    font-size: $font-2xl;
+    font-weight: bold;
+    @include mobile {
+      font-size: $font-m;
+    }
+  }
+  .service-box {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      width: 24%;
+      @include pad {
+        width: 49%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+      span {
+        font-size: 84px;
+      }
+      h3 {
+        font-size: $font-m;
+        font-weight: bold;
+      }
+      p {
+        color: #000;
+        text-align: left;
+      }
+    }
+  }
+}
+.classic {
+  padding: 80px 0;
+  text-align: center;
+  h2 {
+    font-size: $font-2xl;
+    font-weight: bold;
+    color: $color-secondary;
+    @include mobile {
+      font-size: $font-m;
+    }
+  }
+  .classic-box {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include pad {
+      justify-content: center;
+    }
+    li {
+      width: 31.33%;
+      @include pad {
+        width: 51%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+      h3 {
+        font-size: $font-2xl;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+  }
+}
+.co-branding {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  text-align: center;
+  @include pad {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
+  }
+  h2 {
+    color: #ffffff;
+    font-size: $font-2xl;
+    font-weight: bold;
+    @include mobile {
+      font-size: $font-m;
+    }
+  }
+  .co-branding-box {
+    justify-content: center;
+    flex-wrap: wrap;
+    @include mobile {
+      display: none;
+    }
+    li {
+      width: 50%;
+      @include pad {
+        width: 100%;
+      }
+      h3 {
+        font-size: $font-2xl;
+        font-weight: bold;
+        font-style: italic;
+        background: #ffffff;
+      }
+    }
+    .co-branding-img {
+      @include pad {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  .co-branding-md-box {
+    display: none;
+    @include mobile {
+      display: block;
+    }
+    li {
+      width: 100%;
+      h3 {
+        font-size: $font-2xl;
+        font-weight: bold;
+        font-style: italic;
+        background: #ffffff;
+      }
+    }
+    .co-branding-md-img {
+      margin-bottom: 24px;
+    }
+  }
+}
+.recommand {
+  padding: 80px 0;
+  text-align: center;
+  h2 {
+    font-size: $font-2xl;
+    font-weight: bold;
+    color: $color-secondary;
+    @include mobile {
+      font-size: $font-m;
+    }
+  }
+  .recommand-box {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      width: 23.5%;
+      border: 1px solid #dee2e6;
+      border-radius: 4px;
+      box-shadow: 0px 2px 6px #00000029;
+      @include pad {
+        width: 48.5%;
+      }
+      @include mobile {
+        width: 100%;
+        margin-bottom: 16px;
+      }
+      .recommand-box-text {
+        padding: 16px;
+        text-align: left;
+        color: #000;
+        .recommand-name {
+          font-weight: 500;
+        }
+        .date {
+          color: #707070;
+          font-size: 14px;
+        }
+      }
+    }
+    .recommand-box-mb {
+      @include pad {
+        margin-bottom: 24px;
+      }
+      @include mobile {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+.contact-us {
+  background: #fbf2f2;
+  padding: 80px 0;
+  h2 {
+    font-size: $font-2xl;
+    font-weight: bold;
+    color: $color-secondary;
+    text-align: center;
+    @include mobile {
+      font-size: $font-m;
+    }
+  }
+  .contact-us-text {
+    color: #000;
+    margin: 0 auto;
+    width: 50%;
+    @include pad {
+      width: 83.333%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    .info {
+      font-size: $font-s;
+    }
+    label {
+      display: inline-block;
+    }
+    input {
+      background-color: transparent;
+      width: 100%;
+      height: 36px;
+      padding: 12px 6px;
+      border: 1px solid #000;
+      ::placeholder {
+        color: #00000033;
+      }
+    }
+    textarea {
+      background-color: transparent;
+      border: 1px solid #000;
+      padding: 12px 6px;
+      width: 100%;
+    }
+    .agreed-checkbox {
+      height: 24px;
+      width: 24px;
+    }
+    button {
+      width: 65%;
+      background-color: $color-main;
+      padding: 16px;
+      color: #ffffff;
+      border: none;
+      display: block;
+      margin: 0 auto;
+      font-weight: bold;
+      &:hover {
+        color: #ffffffb2;
+      }
+    }
+  }
+}
