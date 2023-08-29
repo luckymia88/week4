@@ -44,7 +44,7 @@
   h2 {
     font-size: $font-2xl;
     font-weight: bold;
-    @include mobile {
+    @include pad {
       font-size: $font-m;
     }
   }
@@ -53,10 +53,10 @@
     flex-wrap: wrap;
     li {
       width: 24%;
-      @include pad {
+      @include xl {
         width: 49%;
       }
-      @include mobile {
+      @include pad {
         width: 100%;
       }
       span {
@@ -74,28 +74,28 @@
   }
 }
 .classic {
-  padding: 80px 0;
+  padding: 80px 12px;
   text-align: center;
   h2 {
     font-size: $font-2xl;
     font-weight: bold;
     color: $color-secondary;
-    @include mobile {
+    @include pad {
       font-size: $font-m;
     }
   }
   .classic-box {
     justify-content: space-between;
     flex-wrap: wrap;
-    @include pad {
+    @include xl {
       justify-content: center;
     }
     li {
       width: 31.33%;
-      @include pad {
+      @include xl {
         width: 51%;
       }
-      @include mobile {
+      @include pad {
         width: 100%;
       }
       h3 {
@@ -112,26 +112,26 @@
   background-position: center;
   padding: 80px 0;
   text-align: center;
-  @include pad {
+  @include xl {
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true);
   }
   h2 {
     color: #ffffff;
     font-size: $font-2xl;
     font-weight: bold;
-    @include mobile {
+    @include pad {
       font-size: $font-m;
     }
   }
   .co-branding-box {
     justify-content: center;
     flex-wrap: wrap;
-    @include mobile {
+    @include pad {
       display: none;
     }
     li {
       width: 50%;
-      @include pad {
+      @include xl {
         width: 100%;
       }
       h3 {
@@ -142,14 +142,14 @@
       }
     }
     .co-branding-img {
-      @include pad {
+      @include xl {
         margin-bottom: 24px;
       }
     }
   }
   .co-branding-md-box {
     display: none;
-    @include mobile {
+    @include pad {
       display: block;
     }
     li {
@@ -173,45 +173,45 @@
     font-size: $font-2xl;
     font-weight: bold;
     color: $color-secondary;
-    @include mobile {
+    @include pad {
       font-size: $font-m;
     }
   }
-  .recommand-box {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    li {
-      width: 23.5%;
-      border: 1px solid #dee2e6;
-      border-radius: 4px;
-      box-shadow: 0px 2px 6px #00000029;
-      @include pad {
-        width: 48.5%;
+}
+.recommand-box {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li {
+    width: 23.5%;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px #00000029;
+    @include xl {
+      width: 48.5%;
+    }
+    @include pad {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    .recommand-box-text {
+      padding: 16px;
+      text-align: left;
+      color: #000;
+      .recommand-name {
+        font-weight: 500;
       }
-      @include mobile {
-        width: 100%;
-        margin-bottom: 16px;
-      }
-      .recommand-box-text {
-        padding: 16px;
-        text-align: left;
-        color: #000;
-        .recommand-name {
-          font-weight: 500;
-        }
-        time {
-          color: #707070;
-          font-size: 14px;
-        }
+      time {
+        color: #707070;
+        font-size: 14px;
       }
     }
-    .recommand-box-mb {
-      @include pad {
-        margin-bottom: 24px;
-      }
-      @include mobile {
-        margin-bottom: 16px;
-      }
+  }
+  .recommand-box-mb {
+    @include pad {
+      margin-bottom: 24px;
+    }
+    @include mobile {
+      margin-bottom: 16px;
     }
   }
 }
@@ -223,7 +223,7 @@
     font-weight: bold;
     color: $color-secondary;
     text-align: center;
-    @include mobile {
+    @include pad {
       font-size: $font-m;
     }
   }
@@ -231,10 +231,10 @@
     color: #000;
     margin: 0 auto;
     width: 50%;
-    @include pad {
+    @include xl {
       width: 83.333%;
     }
-    @include mobile {
+    @include pad {
       width: 100%;
     }
     .info {

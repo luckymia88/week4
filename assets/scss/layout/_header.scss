@@ -2,13 +2,13 @@ nav {
   background: $color-main;
   padding: 16px 0;
   .container {
-    @include pad {
+    @include xl {
       padding: 0;
     }
     .header {
       justify-content: space-between;
       align-items: center;
-      @include pad {
+      @include xl {
         flex-direction: column;
         align-items: flex-start;
         padding: 0;
@@ -25,7 +25,7 @@ nav {
           overflow: hidden;
           white-space: nowrap;
           float: left;
-          @include pad {
+          @include xl {
             margin: 0 0 16px 16px;
           }
         }
@@ -36,12 +36,12 @@ nav {
 
 .header-menu {
   justify-content: space-between;
-  @include pad {
+  @include xl {
     flex-wrap: wrap;
     width: 100%;
   }
   li {
-    @include pad {
+    @include xl {
       border: 1px solid #ffffff;
       width: 50%;
       margin-right: 0;
